@@ -68,7 +68,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://silly-lamington-5afce6.netlify.app/auth/register",
+      "https://ademir-social-media-server.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
@@ -84,7 +84,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     const loggedInResponse = await fetch(
-      "https://silly-lamington-5afce6.netlify.app/auth/login",
+      "https://ademir-social-media-server.onrender.com/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

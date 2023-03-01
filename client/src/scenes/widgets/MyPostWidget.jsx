@@ -48,7 +48,7 @@ const MyPostWidget = ({ picturePath }) => {
     }
 
     const response = await fetch(
-      `https://silly-lamington-5afce6.netlify.app/posts`,
+      `https://ademir-social-media-server.onrender.com/posts`,
       {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },

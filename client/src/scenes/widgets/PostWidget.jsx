@@ -36,7 +36,7 @@ const PostWidget = ({
 
   const patchLike = async () => {
     const response = await fetch(
-      `https://silly-lamington-5afce6.netlify.app/posts/${postId}/like`,
+      `https://ademir-social-media-server.onrender.com/posts/${postId}/like`,
       {
         method: "PATCH",
         headers: {
@@ -68,7 +68,7 @@ const PostWidget = ({
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`https://silly-lamington-5afce6.netlify.app/assets/${picturePath}`}
+          src={`https://ademir-social-media-server.onrender.com/assets/${picturePath}`}
         />
       )}
       <FlexBetween mt="0.25rem">

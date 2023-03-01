@@ -14,7 +14,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getPosts = async () => {
     const response = await fetch(
-      "https://silly-lamington-5afce6.netlify.app/posts",
+      "https://ademir-social-media-server.onrender.com/posts",
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
@@ -26,7 +26,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `https://silly-lamington-5afce6.netlify.app/posts/${userId}`,
+      `https://ademir-social-media-server.onrender.com/posts/${userId}`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
